@@ -7,17 +7,32 @@
     <title>TXTphone</title>
 </head>
 <body>
-    <h1>Welcome to TXTphone</h1>
-    <p>This website allows you to read and write any text file (.txt).</p>
-    <p>This website was created for phone users.</p>
+    <main>
+        <h1>Welcome to TXTphone</h1>
+        <p>This website allows you to read and write any text file (.txt).</p>
+        <p>This website was created for phone users.</p>
 
-    <h2>Select a text file to read or write:</h2>
-    <input type="file" id="fileInput" accept=".txt">
-    <br><br>
-    <h2>File Content:</h2>
-    <textarea id="fileContent" rows="20" cols="80"></textarea>
-    <br><br>
-    <button id="saveButton">Save File</button>
+        <!-- Create a new text file section -->
+        <h2>Create a text file (Optional, if you don't have one)</h2>
+        <input type="text" id="newFileName" placeholder="Enter file name (without .txt)">
+        <button id="createFileButton">Create File</button>
+        <br><br>
+
+        <!-- File selection and content display section -->
+        <h2>Select a text file to read or write:</h2>
+        <input type="file" id="fileInput" accept=".txt">
+        <br><br>
+
+        <h2>Name of the file:</h2>
+        <input type="text" id="fileName" placeholder="No file selected">
+        <br><br>
+
+        <h2>File Content:</h2>
+        <textarea id="fileContent" rows="20" cols="80"></textarea>
+        <br><br>
+
+        <button id="saveButton">Save File</button>
+    </main>
 </body>
     <script src="script.js"></script>
 </html>
